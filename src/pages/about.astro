@@ -1,0 +1,150 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="About | Satyajit Behera" description="About Satyajit Behera">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="About"
+				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
+			>
+				<img
+					width="1553"
+					height="873"
+					src="/assets/at-work.jpg"
+					alt="Jeanine White at work with a colleague"
+				/>
+			</Hero>
+
+			<section>
+				<h2 class="section-title">Background</h2>
+				<div class="content">
+					<p>
+						I have always been interested in technology, and I started coding at a young age. I pursued a degree in civil engineering from the Gandhi Institute of Engineering and Technology, Gunupur. After graduating, I joined a construction company as a QA engineer.					</p>
+					<p>
+						I quickly realized that I was more interested in the testing side of software development. I wanted to make sure that the software that was being developed was of high quality and met the needs of the users. I decided to switch to a career in software testing, and I got my first job as a SDET engineer at a leading tech company.
+					</p>
+					<p>
+						In my previous role, I worked on a mobile application. I developed and executed test plans, worked closely with developers to fix bugs, and helped to implement a continuous integration and continuous delivery (CI/CD) pipeline.
+					</p>
+					<p>
+						I am passionate about quality assurance and testing. I believe that testing is essential for ensuring the success of any software project. I am always looking for new ways to improve the testing process and make sure that the software that is being developed is of the highest quality.
+					</p>
+					<p>
+						Outside of work, I enjoy spending time with my family and friends. I am also interested in reading, swimming, and playing badminton. I am always looking for new challenges and opportunities to learn and grow.
+					</p>
+					<p>
+						I am excited about the future and I am eager to contribute to the development of innovative and high-quality software. I am confident that I have the skills and experience necessary to be a valuable asset to any team.
+					</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Education</h2>
+				<div class="content">
+					<p>Civil Engineering degree from the Gandhi Institute of Engineering and Technology, Gunupur</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Skills</h2>
+				<div class="content">
+					<p>
+						<ul>
+							<li>
+								Software testing methodologies (unit testing, integration testing, system testing, regression testing, end-to-end testing, etc.)
+							</li>
+							<li>
+								Testing tools and frameworks (Selenium, TestNG, Maven, Cypress, Robot framework, Jenkins, Postman, REST Assured, etc.)
+							</li>
+							<li>
+								Programming languages (Java, HTML, CSS, JavaScript, Python)
+							</li>
+							<li>
+								Databases (MySQL, )
+							</li>
+							<li>
+								Version control (GitHub)
+							</li>
+							<li>
+								Cloud computing (Firebase)
+							</li>
+							<li>
+								Software development (object-oriented programming concepts, design patterns, etc.)
+							</li>
+							<li>
+								Problem-solving and critical thinking
+							</li>
+							<li>
+								Communication and teamwork
+							</li>
+						</ul>
+						
+					</p>
+				</div>
+			</section>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>
