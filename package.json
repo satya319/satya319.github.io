@@ -1,5 +1,5 @@
 {
-  "name": "celestial-corot",
+  "name": "Zombie's Website",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -10,6 +10,6 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^3.1.0"
+    "astro": "^3.1.2"
   }
 }
