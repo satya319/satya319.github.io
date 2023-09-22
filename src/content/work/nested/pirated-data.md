@@ -1,7 +1,7 @@
 ---
 title: Pirated-Data 
 publishDate: 2020-03-04 00:00:00
-img: /assets/pirated-data-logo.webp
+img: https://satya319.github.io/satya319/assets/portrait.webp
 img_alt: pirated data logo
 description: |
   A simple open-source library to generate random data for testing, development and machine learning. Import once and use unlimited times. Checkout our documentation for uses and more information. 
