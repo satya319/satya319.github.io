@@ -1,7 +1,7 @@
 ---
 title: House Astrology
 publishDate: 2021-03-11 00:00:00
-img: /assets/icon.jpg
+img: https://satya319.github.io/satya319/assets/icon.jpg
 img_alt: Iridescent ripples of a bright blue and pink liquid
 description: |
  Houses in Vedic Astrology defines and divides the exact areas of a person's life depending on his horoscope which is found out on the basis of a person' accurate time and location and date of birth. Different houses govern different areas of life which you will find out about further in the next section
